@@ -1,0 +1,152 @@
+.hero {
+  position: relative;
+}
+
+/* GRID BACKGROUND */
+
+.grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+}
+
+/* EYEBROW LABEL */
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #22D3EE;
+}
+
+/* GRADIENT TEXT */
+
+.gradientText {
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* BUTTONS */
+
+.primaryBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+  color: white;
+
+  font-weight: 500;
+
+  transition: all 0.25s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(99,102,241,0.35),
+    0 0 15px rgba(34,211,238,0.35);
+}
+
+.secondaryBtn {
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  color: white;
+
+  transition: all 0.25s ease;
+}
+
+.secondaryBtn:hover {
+  border-color: #6366F1;
+  background: rgba(255,255,255,0.03);
+}
+
+/* RIGHT VISUAL CONTAINER */
+
+.visualWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HERO IMAGE */
+
+.heroImage {
+
+  width: 420px;
+  max-width: 100%;
+
+  /* filter:
+    drop-shadow(0 0 40px rgba(34,211,238,0.25))
+    drop-shadow(0 0 80px rgba(99,102,241,0.15)); */
+
+  animation: float 6s ease-in-out infinite;
+}
+
+/* FLOATING ANIMATION */
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-16px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+/* OPTIONAL SOFT GLOW BEHIND IMAGE */
+
+.visualWrapper::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  background: radial-gradient(
+    circle,
+    rgba(99,102,241,0.25),
+    rgba(34,211,238,0.15),
+    transparent 70%
+  );
+
+  filter: blur(70px);
+
+  z-index: -1;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+
+  .visualWrapper {
+    display: none;
+  }
+
+}

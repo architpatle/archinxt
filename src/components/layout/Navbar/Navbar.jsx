@@ -1,10 +1,19 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
 
+  const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Concepts", path: "/concepts" },
+    { name: "Designs", path: "/designs" },
+    { name: "About", path: "/about" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,16 +23,15 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
-
   }, []);
 
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
 
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className={styles.navContainer}>
 
         {/* Logo */}
-         <NavLink to="/" className="flex flex-col leading-tight">
+        <NavLink to="/" className="flex flex-col leading-tight">
           <span className="font-heading text-xl font-bold gradient-text">
             ArchInxT
           </span>
@@ -32,56 +40,67 @@ const Navbar = () => {
           </span>
         </NavLink>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex gap-8 text-sm">
+        {/* Desktop Navigation */}
+        <nav className={styles.desktopNav}>
 
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/concepts"
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-          >
-            Concepts
-          </NavLink>
-
-          <NavLink
-            to="/designs"
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-          >
-            Designs
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-          >
-            About
-          </NavLink>
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.name}
+              to={link.path}
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+            >
+              {link.name}
+            </NavLink>
+          ))}
 
         </nav>
 
-        {/* Button */}
-
+        {/* Connect Button */}
         <NavLink to="/contact" className={styles.connectBtn}>
           Connect
         </NavLink>
 
+        {/* Hamburger */}
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
       </div>
 
+      {/* Bottom Border */}
       <div className={styles.border}></div>
+
+      {/* Mobile Menu */}
+
+      {menuOpen && (
+        <div className={styles.mobileMenu}>
+
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.name}
+              to={link.path}
+              className={styles.mobileLink}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.name}
+            </NavLink>
+          ))}
+
+          <NavLink
+            to="/contact"
+            className={styles.mobileConnect}
+            onClick={() => setMenuOpen(false)}
+          >
+            Connect
+          </NavLink>
+
+        </div>
+      )}
 
     </header>
   );

@@ -1,5 +1,3 @@
-/* Glass Navbar */
-
 .navbar {
   position: sticky;
   top: 0;
@@ -9,29 +7,37 @@
   background: rgba(15, 23, 42, 0.6);
 }
 
-/* Scroll Shadow */
-
 .scrolled {
   box-shadow:
     0 8px 30px rgba(0,0,0,0.4),
     0 0 25px rgba(99,102,241,0.15);
 }
 
-/* Bottom Faded Border */
+/* Container */
 
-.border {
-  height: 1px;
-  width: 100%;
+.navContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
 
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255,255,255,0.35),
-    transparent
-  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Nav Links */
+/* Logo */
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Desktop Nav */
+
+.desktopNav {
+  display: flex;
+  gap: 32px;
+}
 
 .link {
   color: #94A3B8;
@@ -42,7 +48,7 @@
   color: white;
 }
 
-/* Active Link */
+/* Active */
 
 .active {
   color: white;
@@ -52,7 +58,6 @@
 .active::after {
   content: "";
   position: absolute;
-
   bottom: -6px;
   left: 0;
 
@@ -66,21 +71,14 @@
   );
 }
 
-/* Connect Button */
+/* Button */
 
 .connectBtn {
   padding: 8px 18px;
   border-radius: 8px;
 
-  background: linear-gradient(
-    135deg,
-    #6366F1,
-    #22D3EE
-  );
-
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
   color: white;
-  font-size: 14px;
-  font-weight: 500;
 
   transition: 0.25s ease;
 }
@@ -91,4 +89,79 @@
   box-shadow:
     0 6px 18px rgba(99,102,241,0.35),
     0 0 12px rgba(34,211,238,0.4);
+}
+
+/* Hamburger */
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Mobile Menu */
+
+.mobileMenu {
+  display: none;
+}
+
+/* Border */
+
+.border {
+  height: 1px;
+  width: 100%;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,0.35),
+    transparent
+  );
+}
+
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+
+  .desktopNav {
+    display: none;
+  }
+
+  .connectBtn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 20px 24px;
+
+    background: #0F172A;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mobileLink {
+    color: #94A3B8;
+  }
+
+  .mobileLink:hover {
+    color: white;
+  }
+
+  .mobileConnect {
+    padding: 10px;
+    text-align: center;
+
+    border-radius: 8px;
+    background: linear-gradient(135deg,#6366F1,#22D3EE);
+    color: white;
+  }
+
 }
