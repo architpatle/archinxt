@@ -1,18 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className="text-5xl font-bold gradient-text">
-  Architecture Of Innovation & Technology
-</h1>
-    </>
-  )
+    <div className="bg-bgPrimary min-h-screen text-white">
+      
+      <Navbar />
+
+      <main>
+        <AppRoutes />
+      </main>
+
+      <Footer />
+
+    </div>
+  );
 }
 
-export default App
+export default App;
