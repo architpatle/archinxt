@@ -32,8 +32,8 @@ const Navbar = () => {
 
         {/* Logo */}
         <NavLink to="/" className="flex flex-col leading-tight">
-          <span className="font-heading text-xl font-bold gradient-text">
-            ArchInxT
+          <span className="font-heading text-xl font-bold">Arch<span className=" gradient-text">
+            InxT</span>
           </span>
           <span className="text-[10px] text-textMuted hidden sm:block">
             Architecture Of Innovation & Technology
