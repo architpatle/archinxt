@@ -1,7 +1,7 @@
 import styles from "./DesignShowcase.module.css";
-import wildcap from "../../../assets/images/Wildcap.png";
-import neurosync from "../../../assets/images/Neurosync.png";
-import sustainify from "../../../assets/images/Sustainify.png"
+import wildcap from "../../../../assets/images/Wildcap.png";
+import neurosync from "../../../../assets/images/Neurosync.png";
+import sustainify from "../../../../assets/images/Sustainify.png"
 
 const designs = [
   {

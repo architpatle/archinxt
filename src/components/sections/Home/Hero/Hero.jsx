@@ -1,6 +1,6 @@
 import styles from "./Hero.module.css";
 import { ArrowRight } from "lucide-react";
-import heroVisual from "../../../assets/images/archinxt-hero-visual.png";
+import heroVisual from "../../../../assets/images/archinxt-hero-visual.png";
 
 const Hero = () => {
   return (

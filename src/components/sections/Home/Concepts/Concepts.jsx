@@ -1,7 +1,7 @@
 import styles from "./Concepts.module.css";
-import bandwidth from "../../../assets/images/Bandwidth.png";
-import cache from "../../../assets/images/Cache.png";
-import pipeline from "../../../assets/images/Pipeline.png";
+import bandwidth from "../../../../assets/images/Bandwidth.png";
+import cache from "../../../../assets/images/Cache.png";
+import pipeline from "../../../../assets/images/Pipeline.png";
 const concepts = [
   {
     title: "What is Bandwidth?",
