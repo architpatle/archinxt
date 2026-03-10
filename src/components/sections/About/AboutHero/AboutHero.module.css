@@ -1,21 +1,21 @@
-.aboutHero {
+.hero {
   position: relative;
 }
 
-/* grid background */
+/* GRID BACKGROUND */
 
 .grid {
   position: absolute;
   inset: 0;
 
   background-image:
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
 
   background-size: 60px 60px;
 }
 
-/* eyebrow */
+/* EYEBROW */
 
 .eyebrow {
 
@@ -29,14 +29,33 @@
 
 }
 
-/* gradient text */
+/* GRADIENT TEXT */
 
-.gradientText {
+.gradient {
 
   background: linear-gradient(135deg,#6366F1,#22D3EE);
 
   -webkit-background-clip: text;
 
   -webkit-text-fill-color: transparent;
+
+}
+
+/* DIVIDER */
+
+.divider {
+
+  margin-top: 80px;
+
+  height: 1px;
+
+  width: 100%;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,0.3),
+    transparent
+  );
 
 }
