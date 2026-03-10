@@ -1,0 +1,42 @@
+.aboutHero {
+  position: relative;
+}
+
+/* grid background */
+
+.grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+}
+
+/* eyebrow */
+
+.eyebrow {
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #22D3EE;
+
+}
+
+/* gradient text */
+
+.gradientText {
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
