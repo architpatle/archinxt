@@ -5,18 +5,18 @@ import Inside from '../components/sections/About/Inside/Inside'
 import Philosophy from '../components/sections/About/Philosophy/Philosophy'
 import Signature from '../components/sections/About/Signature/Signature'
 import Roadmap from '../components/sections/About/Roadmap/Roadmap'
+import ClosingCTA from '../components/sections/About/ClosingCTA/ClosingCTA'
+import AboutCTA from '../components/sections/About/AboutCTA/AboutCTA'
 
 const About = () => {
   return (
     <>
      <AboutHero />
-     
      <Creation />
-  
-     {/* <Inside /> */}
     <Philosophy />
-    {/* <Signature /> */}
     <Roadmap />
+    {/* <ClosingCTA /> */}
+    <AboutCTA />
     </>
   )
 }

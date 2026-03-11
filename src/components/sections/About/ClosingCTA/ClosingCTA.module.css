@@ -1,0 +1,94 @@
+.closing {
+
+  position: relative;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+}
+
+/* TITLE */
+
+.title {
+
+  font-size: 44px;
+
+  font-weight: 600;
+
+}
+
+.title span {
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+/* DESCRIPTION */
+
+.desc {
+
+  margin-top: 18px;
+
+  color: #94A3B8;
+
+  max-width: 520px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  line-height: 1.7;
+
+}
+
+/* ACTIONS */
+
+.actions {
+
+  margin-top: 36px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 16px;
+
+}
+
+/* PRIMARY */
+
+.primary {
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  color: white;
+
+  border: none;
+
+  cursor: pointer;
+
+}
+
+/* SECONDARY */
+
+.secondary {
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background: transparent;
+
+  color: white;
+
+  cursor: pointer;
+
+}
