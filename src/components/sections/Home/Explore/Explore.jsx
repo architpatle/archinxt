@@ -5,8 +5,8 @@ const Explore = () => {
   return (
     <section className={`${styles.explore} relative`}>
 
-      {/* Grid Background */}
-      <div className={styles.grid}></div>
+        
+       
 
       <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
 

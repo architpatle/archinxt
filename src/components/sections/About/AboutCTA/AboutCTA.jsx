@@ -4,8 +4,8 @@ const AboutCTA = () => {
   return (
     <section className={`${styles.cta} relative`}>
 
-      {/* Grid Background */}
-      <div className={styles.grid}></div>
+        
+       
 
       <div className="max-w-7xl mx-auto px-6 py-28 relative z-10">
 

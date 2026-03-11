@@ -5,7 +5,6 @@ import Concepts from '../components/sections/Home/Concepts/Concepts'
 import DesignShowcase from '../components/sections/Home/DesignShowcase/DesignShowcase'
 import Insights from '../components/sections/Home/Insights/Insights'
 import Community from '../components/sections/Home/Community/Community'
-import Approach from '../components/sections/Home/Approach/Approach'
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
       <DesignShowcase />
       <Insights />
       <Community />
-      {/* <Approach /> */}
 
     </div>
   )

@@ -4,7 +4,7 @@ const AboutHero = () => {
   return (
     <section className={`${styles.hero} relative`}>
 
-      <div className={styles.grid}></div>
+       
 
       <div className="max-w-7xl mx-auto px-6 pt-36 pb-28 relative z-10">
 

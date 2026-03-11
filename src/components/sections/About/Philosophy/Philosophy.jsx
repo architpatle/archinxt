@@ -19,7 +19,7 @@ const Philosophy = () => {
   return (
     <section className={`${styles.philosophy} relative`}>
 
-      <div className={styles.grid}></div>
+       
 
       <div className="max-w-7xl mx-auto px-6 py-32 relative z-10">
 

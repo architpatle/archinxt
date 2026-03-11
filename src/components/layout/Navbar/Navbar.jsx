@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
 
-      <div className={styles.navContainer}>
+      <div className={`${styles.navContainer} max-w-7xl mx-auto px-6`}>
 
         {/* Logo */}
         <NavLink to="/" className="flex flex-col leading-tight">

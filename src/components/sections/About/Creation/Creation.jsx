@@ -5,7 +5,7 @@ const Creation = () => {
   return (
     <section className={`${styles.creation} relative`}>
 
-      <div className={styles.grid}></div>
+       
 
       <div className="max-w-7xl mx-auto px-6 py-28 relative z-10">
 
