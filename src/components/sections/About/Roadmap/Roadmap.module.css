@@ -1,0 +1,162 @@
+.roadmap {
+  position: relative;
+}
+
+/* EYEBROW */
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #22D3EE;
+}
+
+/* GRADIENT */
+
+.gradientText {
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LAYOUT */
+
+.wrapper {
+
+  margin-top: 80px;
+
+  display: grid;
+
+  grid-template-columns: 380px 1fr;
+
+  gap: 80px;
+
+}
+
+/* LEFT NAVIGATION */
+
+.leftCards {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+}
+
+/* SMALL CARD */
+
+.smallCard {
+
+  padding: 22px 24px;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+}
+
+.smallCard:hover {
+
+  border-color: rgba(99,102,241,0.5);
+
+}
+
+/* ACTIVE CARD */
+
+.active {
+
+  border-color: #6366F1;
+
+  background: rgba(99,102,241,0.08);
+
+}
+
+/* RIGHT PANEL */
+
+.rightCard {
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+}
+
+/* ICON */
+
+.icon {
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  color: white;
+
+}
+
+/* TITLE */
+
+.rightCard h3 {
+
+  margin-top: 20px;
+
+  font-size: 26px;
+
+  font-weight: 600;
+
+}
+
+/* DESCRIPTION */
+
+.rightCard p {
+
+  margin-top: 14px;
+
+  color: #94A3B8;
+
+  line-height: 1.7;
+
+  max-width: 420px;
+
+}
+
+/* CTA */
+
+.cta {
+
+  margin-top: 26px;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  color: white;
+
+  font-weight: 500;
+
+  border: none;
+
+  cursor: pointer;
+
+}
