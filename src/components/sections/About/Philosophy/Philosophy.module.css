@@ -1,0 +1,111 @@
+.philosophy {
+  position: relative;
+}
+
+/* GRID BACKGROUND */
+
+.grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+}
+
+/* EYEBROW */
+
+.eyebrow {
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #22D3EE;
+
+}
+
+/* GRADIENT TEXT */
+
+.gradientText {
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+/* ROW */
+
+.row {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 28px 0;
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+  font-size: 28px;
+
+  transition: all 0.25s ease;
+
+}
+
+/* LEFT TEXT */
+
+.left {
+
+  color: #CBD5F5;
+
+}
+
+/* RIGHT TEXT */
+
+.right {
+
+  font-weight: 600;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+/* HOVER EFFECT */
+
+.row:hover {
+
+  transform: translateX(8px);
+
+  border-color: rgba(99,102,241,0.4);
+
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .row {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+
+    font-size: 22px;
+
+  }
+
+}
