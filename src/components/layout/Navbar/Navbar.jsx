@@ -58,7 +58,7 @@ const Navbar = () => {
         </nav>
 
         {/* Connect Button */}
-        <NavLink to="/contact" className={styles.connectBtn}>
+        <NavLink to="/connect" className={styles.connectBtn}>
           Connect
         </NavLink>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
           ))}
 
           <NavLink
-            to="/contact"
+            to="/connect"
             className={styles.mobileConnect}
             onClick={() => setMenuOpen(false)}
           >

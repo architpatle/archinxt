@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import Concepts from "../pages/Concepts";
 import Designs from "../pages/Designs";
 import About from "../pages/About";
-import Contact from "../pages/Contact";
+import Connect from "../pages/Connect";
 
 const AppRoutes = () => {
   return (
@@ -13,7 +13,7 @@ const AppRoutes = () => {
       <Route path="/concepts" element={<Concepts />} />
       <Route path="/designs" element={<Designs />} />
       <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/connect" element={<Connect />} />
     </Routes>
   );
 };
