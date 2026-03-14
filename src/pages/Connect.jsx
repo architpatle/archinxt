@@ -2,6 +2,7 @@ import React from 'react'
 import ConnectHero from '../components/sections/Connect/connectHero/connectHero'
 import ConnectOptions from '../components/sections/Connect/ConnectOptions/ConnectOptions'
 import ContactSection from '../components/sections/Connect/ContactSection/ContactSection'
+import FinalCTA from '../components/sections/Connect/FinalCTA/FinalCTA'
 
 const Connect = () => {
   return (
@@ -9,6 +10,7 @@ const Connect = () => {
       <ConnectHero />
       <ConnectOptions />
       <ContactSection />
+      <FinalCTA />
     </div>
   )
 }
