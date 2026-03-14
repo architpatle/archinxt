@@ -1,0 +1,119 @@
+.contact{
+  position: relative;
+}
+
+/* GRADIENT TEXT */
+
+.gradientText{
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* INFO CARD */
+
+.infoCard{
+
+  padding:32px;
+
+  border-radius:14px;
+
+  background: rgba(255,255,255,0.04);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+}
+
+/* CONTACT ITEM */
+
+.contactItem{
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  color:#cbd5f5;
+}
+
+/* FORM */
+
+.form{
+
+  padding:32px;
+
+  border-radius:14px;
+
+  background: rgba(255,255,255,0.04);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+}
+
+/* INPUT */
+
+.input{
+
+  width:100%;
+
+  padding:12px 14px;
+
+  border-radius:8px;
+
+  background: rgba(255,255,255,0.03);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  outline:none;
+
+  color:white;
+
+  font-size:14px;
+
+}
+
+.input::placeholder{
+  color:#94a3b8;
+}
+
+.input:focus{
+  border-color:#6366F1;
+}
+
+/* BUTTON */
+
+.button{
+
+  margin-top:20px;
+
+  width:100%;
+
+  padding:12px;
+
+  border-radius:10px;
+
+  border:none;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  color:white;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition: all 0.3s ease;
+
+}
+
+.button:hover{
+
+  transform: translateY(-2px);
+
+  box-shadow:0 8px 25px rgba(99,102,241,0.35);
+
+}
