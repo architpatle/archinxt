@@ -1,10 +1,8 @@
-import styles from "./AboutHero.module.css";
+import styles from "./ConceptsHero.module.css";
 
-const   AboutHero = () => {
+const ConceptsHero = () => {
   return (
     <section className={`${styles.hero} relative`}>
-
-       
 
       <div className="max-w-7xl mx-auto px-6 pt-36 pb-28 relative z-10">
 
@@ -13,16 +11,16 @@ const   AboutHero = () => {
           {/* Label */}
 
           <span className={styles.eyebrow}>
-            About ArchInxT
+            Concepts
           </span>
 
-          {/* Main Heading */}
+          {/* Heading */}
 
           <h1 className="mt-6 text-5xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
 
-            Exploring the
-            <span className={styles.gradient}> Architecture </span>
-            of Modern Technology
+            Understanding the concepts of
+            <span className={styles.gradient}> Modern Technology </span>
+        
 
           </h1>
 
@@ -30,9 +28,9 @@ const   AboutHero = () => {
 
           <p className="mt-8 text-lg text-textMuted leading-relaxed max-w-2xl mx-auto">
 
-            ArchInxT is built on a simple idea — technology becomes
-            easier to understand when its structure is made visible.
-
+            Explore key technology concepts that power modern
+            digital systems — from networking and performance
+            to AI infrastructure and web architecture.
 
           </p>
 
@@ -48,4 +46,4 @@ const   AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default ConceptsHero;

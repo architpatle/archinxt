@@ -26,7 +26,7 @@ const FinalCTA = () => {
             </button>
 
             <button className={styles.secondaryBtn}>
-              Explore ArchInxT
+               Explore ArchInxT
             </button>
 
           </div>

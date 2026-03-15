@@ -68,7 +68,7 @@ const ContactSection = () => {
           <form className={styles.form}>
 
             <div className="grid md:grid-cols-2 gap-4">
-
+ 
               <input
                 type="text"
                 placeholder="Your Name"
@@ -76,10 +76,10 @@ const ContactSection = () => {
               />
 
               <input
-                type="email"
+                type=" email"
                 placeholder="Your Email"
                 className={styles.input}
-              />
+              /> 
 
             </div>
 
