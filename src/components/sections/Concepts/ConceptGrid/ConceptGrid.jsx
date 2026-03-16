@@ -56,9 +56,9 @@ const ConceptGrid = () => {
                   {concept.description}
                 </p>
 
-                <Link to={concept.path} className={styles.cardBtn}>
-                  Explore Concept →
-                </Link>
+                <Link to={`/concepts/${concept.slug}`} className={styles.cardBtn}>
+  Explore Concept →
+</Link>
 
               </div>
             );
