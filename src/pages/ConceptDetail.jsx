@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import conceptsData from "../data/conceptsData";
 import ConceptLayout from "../components/sections/ConceptPage/ConceptLayout/ConceptLayout";
+import KeyTakeaways from "../components/sections/ConceptPage/KeyTakeaways/KeyTakeaways";
+import RelatedConcepts from "../components/sections/ConceptPage/RelatedConcepts/RelatedConcepts";
 
 const ConceptDetail = () => {
 
@@ -15,40 +17,56 @@ const ConceptDetail = () => {
   }
 
   return (
+    <>
 
-    <ConceptLayout
-      title={concept.title}
-      image={concept.image}
-    >
+      <ConceptLayout
+        title={concept.title}
+        image={concept.image}
+      >
 
-      {concept.sections.map((section, index) => (
+        {/* Sections */}
 
-        <div key={index} className="mb-10">
+        {concept.sections.map((section, index) => (
 
-          <h2 className="text-2xl font-semibold mb-4">
-            {section.heading}
-          </h2>
+          <div key={index} className="mb-10">
 
-          {section.list ? (
-            <ul className="list-disc pl-6 space-y-2 text-textMuted">
-              {section.content.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          ) : (
-            section.content.map((para, i) => (
-              <p key={i} className="mb-4 text-textMuted leading-relaxed">
-                {para}
-              </p>
-            ))
-          )}
+            <h2 className="text-2xl font-semibold mb-4">
+              {section.heading}
+            </h2>
 
-        </div>
+            {section.list ? (
+              <ul className="list-disc pl-6 space-y-2 text-textMuted">
+                {section.content.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            ) : (
+              section.content.map((para, i) => (
+                <p key={i} className="mb-4 text-textMuted leading-relaxed">
+                  {para}
+                </p>
+              ))
+            )}
 
-      ))}
+          </div>
 
-    </ConceptLayout>
+        ))}
 
+        {/* Key Takeaways */}
+
+        {concept.keyTakeaways && (
+          <KeyTakeaways points={concept.keyTakeaways} />
+        )}
+
+      </ConceptLayout>
+
+      {/* ✅ FULL WIDTH RELATED SECTION */}
+
+      <div className="max-w-7xl mx-auto px-6 pb-24">
+        <RelatedConcepts currentSlug={concept.slug} />
+      </div>
+
+    </>
   );
 };
 

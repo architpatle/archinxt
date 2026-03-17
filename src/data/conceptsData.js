@@ -9,11 +9,13 @@ import {
   Server,
 } from "lucide-react";
 
-import latencyImg from "../assets/images/Cache.png";
+import latencyImg from "../assets/images/Latency.png";
 import cacheImg from "../assets/images/Cache.png";
 import pipelineImg from "../assets/images/Pipeline.png";
 
 const conceptsData = [
+
+  // ================= LATENCY =================
 
   {
     slug: "latency",
@@ -27,23 +29,30 @@ const conceptsData = [
 
     image: latencyImg,
 
+    keyTakeaways: [
+      "Latency is the time delay between request and response",
+      "Measured in milliseconds (ms)",
+      "Lower latency improves responsiveness",
+      "High latency causes slow and laggy systems",
+    ],
+
     sections: [
 
       {
         heading: "What Is Latency?",
         content: [
-          `Latency refers to the time delay between a request being sent and the response being received.`,
-          `In networking and computing systems, latency is usually measured in milliseconds (ms).`,
-          `Lower latency means faster system responses and a smoother user experience.`,
+          `Latency refers to the time it takes for data to travel from the source to the destination and back.`,
+          `It is one of the most important factors that determines how fast a system responds.`,
+          `Latency is typically measured in milliseconds (ms).`,
         ],
       },
 
       {
         heading: "Why Latency Matters",
         content: [
-          `Latency directly impacts how responsive an application feels to users.`,
-          `Applications like online gaming, video conferencing, and financial trading require extremely low latency.`,
-          `Even small increases in latency can lead to noticeable delays in user interactions.`,
+          `Latency directly affects user experience in applications.`,
+          `High latency leads to delays, making applications feel slow and unresponsive.`,
+          `Low latency is critical in real-time systems such as gaming, video calls, and trading platforms.`,
         ],
       },
 
@@ -51,20 +60,20 @@ const conceptsData = [
         heading: "Factors That Affect Latency",
         list: true,
         content: [
-          "Network distance between client and server",
+          "Distance between client and server",
+          "Network congestion",
           "Server processing time",
           "Database query performance",
-          "Network congestion",
-          "Inefficient system architecture",
+          "Inefficient architecture design",
         ],
       },
 
       {
         heading: "Real World Example",
         content: [
-          `When a user clicks a button on a website, the request travels to a server and the server sends back a response.`,
-          `The time taken for this entire round trip is the latency.`,
-          `Reducing latency improves the overall performance and responsiveness of applications.`,
+          `When you click a button on a website, the request travels to the server and the response comes back.`,
+          `The time taken for this round trip is latency.`,
+          `Reducing latency makes applications faster and more responsive.`,
         ],
       },
 
@@ -72,6 +81,8 @@ const conceptsData = [
   },
 
 
+
+  // ================= CACHING =================
 
   {
     slug: "caching",
@@ -85,23 +96,30 @@ const conceptsData = [
 
     image: cacheImg,
 
+    keyTakeaways: [
+      "Caching stores frequently used data temporarily",
+      "Reduces load on servers and databases",
+      "Improves application speed significantly",
+      "Used in browsers, CDNs, and servers",
+    ],
+
     sections: [
 
       {
         heading: "What Is Caching?",
         content: [
-          `Caching is the process of storing frequently accessed data temporarily so it can be retrieved faster.`,
-          `Instead of repeatedly requesting data from a database or API, the system can return the cached version.`,
-          `This significantly improves application speed and reduces server load.`,
+          `Caching is the process of storing frequently accessed data so it can be retrieved faster.`,
+          `Instead of fetching data repeatedly from the original source, the system serves it from the cache.`,
+          `This improves performance and reduces system load.`,
         ],
       },
 
       {
         heading: "Why Caching Is Important",
         content: [
-          `Modern applications often serve millions of users simultaneously.`,
-          `Caching helps reduce the number of expensive database queries and API calls.`,
-          `This leads to faster responses and better system scalability.`,
+          `Modern applications handle a large number of users simultaneously.`,
+          `Caching reduces repeated database queries and API calls.`,
+          `This leads to faster responses and better scalability.`,
         ],
       },
 
@@ -119,9 +137,9 @@ const conceptsData = [
       {
         heading: "Real World Example",
         content: [
-          `When you visit a website for the first time, the browser downloads images, stylesheets, and scripts.`,
-          `On subsequent visits, many of these files are loaded from the browser cache instead of the server.`,
-          `This dramatically reduces loading time and improves user experience.`,
+          `When you visit a website, images and files are stored in your browser cache.`,
+          `On your next visit, these resources are loaded from cache instead of downloading again.`,
+          `This significantly improves page load speed.`,
         ],
       },
 
@@ -130,34 +148,43 @@ const conceptsData = [
 
 
 
+  // ================= PIPELINE =================
+
   {
     slug: "pipeline",
 
     title: "Pipeline",
 
     description:
-      "A pipeline processes data in multiple stages enabling faster and more efficient processing.",
+      "A pipeline processes data in multiple stages enabling faster and more efficient execution.",
 
     icon: Layers,
 
     image: pipelineImg,
+
+    keyTakeaways: [
+      "Pipelines divide tasks into multiple stages",
+      "Each stage processes data sequentially",
+      "Improves throughput and efficiency",
+      "Widely used in CPU, data processing, and CI/CD",
+    ],
 
     sections: [
 
       {
         heading: "What Is a Pipeline?",
         content: [
-          `A pipeline is a technique where a complex task is divided into multiple sequential stages.`,
+          `A pipeline is a technique where a task is divided into multiple stages.`,
           `Each stage performs a specific operation and passes the result to the next stage.`,
-          `This allows different stages to process data simultaneously, improving system efficiency.`,
+          `This allows multiple stages to process data simultaneously.`,
         ],
       },
 
       {
         heading: "Where Pipelines Are Used",
         content: [
-          `Pipelines are widely used across many computing systems.`,
-          `They help process data efficiently by breaking work into smaller stages.`,
+          `Pipelines are widely used in computing systems to improve efficiency.`,
+          `They help break complex processes into smaller manageable steps.`,
         ],
       },
 
@@ -169,7 +196,7 @@ const conceptsData = [
           "Data processing systems",
           "Machine learning workflows",
           "Video processing pipelines",
-          "CI/CD build pipelines",
+          "CI/CD pipelines",
         ],
       },
 
@@ -178,18 +205,18 @@ const conceptsData = [
         list: true,
         content: [
           "Improved throughput",
-          "Parallel execution of tasks",
+          "Parallel processing",
           "Better resource utilization",
-          "Reduced idle time for processors",
+          "Reduced idle time",
         ],
       },
 
       {
-        heading: "Example of a Data Pipeline",
+        heading: "Real World Example",
         content: [
-          `A typical data pipeline might include stages like data ingestion, data cleaning, transformation, and storage.`,
-          `Each stage performs a specific operation while passing processed data to the next stage.`,
-          `This allows large volumes of data to be processed efficiently.`,
+          `A data pipeline may include steps like data collection, processing, transformation, and storage.`,
+          `Each stage performs a specific function while passing data forward.`,
+          `This enables efficient handling of large data sets.`,
         ],
       },
 
