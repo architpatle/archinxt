@@ -1,12 +1,11 @@
-import React from 'react'
+import DesignHero from "../../src/components/sections/Designs/DesignHero/DesignHero";
 
 const Designs = () => {
   return (
-    <div>
-      Designs
-Designs
-    </div>
-  )
-}
+    <>
+      <DesignHero />
+    </>
+  );
+};
 
-export default Designs
+export default Designs;
