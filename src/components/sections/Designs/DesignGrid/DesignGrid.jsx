@@ -91,7 +91,7 @@ const DesignGrid = () => {
               onClick={handleLoadMore}
               className={styles.loadMoreBtn}
             >
-              Explore More Designs
+             Discover More Designs
             </button>
           </div>
         )}
