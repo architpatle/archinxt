@@ -1,0 +1,152 @@
+.designs {
+  position: relative;
+}
+
+/* GRADIENT TEXT */
+
+.gradientText {
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARD */
+
+.card {
+
+  display: block;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  transition: all 0.35s ease;
+
+}
+
+/* HOVER */
+
+.card:hover {
+
+  transform: translateY(-6px);
+
+  border-color: rgba(99,102,241,0.5);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    0 0 20px rgba(99,102,241,0.15);
+
+}
+
+/* IMAGE */
+
+.imageWrapper {
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.image {
+
+  width: 100%;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+
+}
+
+/* IMAGE HOVER */
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* VIEW MORE */
+
+.viewMore {
+
+  display: inline-block;
+
+  margin-top: 12px;
+
+  font-size: 14px;
+
+  color: #22D3EE;
+
+  transition: all 0.25s ease;
+
+}
+
+.viewMore:hover {
+  color: #6366F1;
+  transform: translateX(4px);
+}
+
+/* LOAD MORE BUTTON */
+
+.loadMoreBtn{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+  color: white;
+
+  font-weight: 500;
+
+  transition: all 0.25s ease;
+
+}
+
+.loadMoreBtn:hover{
+
+    transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(99,102,241,0.35),
+    0 0 15px rgba(34,211,238,0.35);
+
+}
+
+/* PEEK EFFECT
+
+.peek{
+  position: relative;
+}
+
+.peek::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:-40px;
+
+  height:80px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(2,6,23,0),
+    rgba(2,6,23,1)
+  );
+
+  pointer-events:none;
+
+} */
