@@ -6,6 +6,7 @@ import Designs from "../pages/Designs";
 import About from "../pages/About";
 import Connect from "../pages/Connect";
 import ConceptDetail from "../pages/ConceptDetail";
+import DesignDetail from "../pages/DesignDetail/DesignDetail";
 
 const AppRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/connect" element={<Connect />} />
      <Route path="/concepts/:conceptId" element={<ConceptDetail />} />
+     <Route path="/designs/:designId" element={<DesignDetail />} />
     </Routes>
   );
 };

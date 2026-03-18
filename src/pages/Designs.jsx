@@ -7,7 +7,7 @@ const Designs = () => {
     <>
       <DesignHero />
       <DesignGrid />
-      <DesignCTA />
+      <DesignCTA /> 
     </>
   );
 };

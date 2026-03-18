@@ -1,0 +1,54 @@
+.wrapper{
+  position: relative;
+}
+
+/* HERO */
+
+.heroImage{
+  margin-top: 60px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.heroImage img{
+  width: 100%;
+  display: block;
+}
+
+/* TEXT SECTION */
+
+.textSection{
+  margin-top: 80px;
+  max-width: 700px;
+}
+
+/* FULL IMAGE */
+
+.fullImage{
+  margin-top: 80px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.fullImage img{
+  width: 100%;
+  display: block;
+}
+
+/* GRID */
+
+.grid{
+  margin-top: 60px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.grid img{
+  width: 100%;
+  border-radius: 12px;
+}

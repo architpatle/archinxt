@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import conceptsData from "../../../../data/conceptsData";
 
-const ConceptGrid = () => {
+const  ConceptGrid = () => {
 
   const [visibleCount, setVisibleCount] = useState(6);
-
+ 
   const visibleConcepts = conceptsData.slice(0, visibleCount);
   const hasMore = visibleCount < conceptsData.length;
 
@@ -29,7 +29,7 @@ const ConceptGrid = () => {
 
           <p className="mt-4 text-textMuted text-lg">
             Key ideas that shape modern digital systems and
-            software architecture.
+            software architecture of modern world.
           </p>
         </div>
 
