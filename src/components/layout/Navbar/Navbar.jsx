@@ -10,9 +10,11 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
+    { name: "Builds", path: "/builds"},
     { name: "Concepts", path: "/concepts" },
     { name: "Designs", path: "/designs" },
     { name: "About", path: "/about" },
+    
   ];
 
   useEffect(() => {
