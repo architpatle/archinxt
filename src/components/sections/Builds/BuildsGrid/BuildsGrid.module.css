@@ -1,0 +1,199 @@
+/* FILTER BUTTON */
+
+.filterBtn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  font-size: 14px;
+  color: #9CA3AF;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+  border-color: #22D3EE;
+  color: white;
+}
+
+.active {
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+  color: white;
+  border: none;
+}
+
+.designs {
+  position: relative;
+}
+
+/* GRADIENT TEXT (same as DesignGrid) */
+
+.gradientText {
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARD (MATCHED WITH DESIGN GRID) */
+
+.card {
+
+  display: block;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  transition: all 0.35s ease;
+
+}
+
+/* HOVER (same feel, slightly enhanced for builds) */
+
+.card:hover {
+
+  transform: translateY(-6px);
+
+  border-color: rgba(99,102,241,0.5);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    0 0 20px rgba(99,102,241,0.15);
+
+}
+
+/* IMAGE */
+
+.imageWrapper {
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.image {
+
+  width: 100%;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+
+}
+
+/* IMAGE HOVER */
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* STATUS */
+
+.status {
+
+  font-size: 12px;
+
+  color: #22D3EE;
+
+}
+
+/* TECH TAGS (subtle, consistent with system) */
+
+.tech {
+
+  font-size: 12px;
+
+  padding: 4px 10px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.06);
+
+  color: #D1D5DB;
+
+}
+
+/* BUTTONS */
+
+.primaryBtn {
+
+  flex: 1;
+
+ padding: 12px 22px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+
+  font-size: 14px;
+
+  transition: all 0.25s ease;
+
+}
+
+.primaryBtn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(99,102,241,0.35),
+    0 0 12px rgba(34,211,238,0.35);
+
+}
+
+.secondaryBtn {
+
+  flex: 1;
+
+padding: 12px 22px;
+
+  border-radius: 8px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  color: white;
+
+  transition: all 0.25s ease;
+
+}
+
+.secondaryBtn:hover {
+
+    border-color: #6366F1;
+    background: rgba(255,255,255,0.03);
+
+}
+
+.loadMoreBtn{
+    display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  background: linear-gradient(135deg,#6366F1,#22D3EE);
+  color: white;
+
+  font-weight: 500;
+
+  transition: all 0.25s ease;
+}
+
+.loadMoreBtn:hover{
+
+    transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(99,102,241,0.35),
+    0 0 15px rgba(34,211,238,0.35);
+
+}
