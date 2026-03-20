@@ -4,6 +4,7 @@ import styles from "./BuildDetail.module.css";
 import BuildDetailHero from "../../components/sections/BuildDetail/BuildDetailHero/BuildDetailHero";
 import BuildDescription from "../../components/sections/BuildDetail/BuildDescription/BuildDescription";
 import BuildTechStack from "../../components/sections/BuildDetail/BuildTechStack/BuildTechStack";
+import BuildRecommendations from "../../components/sections/BuildDetail/BuildRecommendations/BuildRecommendations";
 
 const BuildDetail = () => {
   const { slug } = useParams();
@@ -16,6 +17,7 @@ const BuildDetail = () => {
       <BuildDetailHero build={build} />
       <BuildDescription build={build} />
       <BuildTechStack  build={build} />
+      <BuildRecommendations currentSlug={build.slug} />
     </>
 );
 };
