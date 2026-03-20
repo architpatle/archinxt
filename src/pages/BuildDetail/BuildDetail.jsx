@@ -3,6 +3,7 @@ import buildsData from "../../data/buildsData";
 import styles from "./BuildDetail.module.css";
 import BuildDetailHero from "../../components/sections/BuildDetail/BuildDetailHero/BuildDetailHero";
 import BuildDescription from "../../components/sections/BuildDetail/BuildDescription/BuildDescription";
+import BuildTechStack from "../../components/sections/BuildDetail/BuildTechStack/BuildTechStack";
 
 const BuildDetail = () => {
   const { slug } = useParams();
@@ -14,6 +15,7 @@ const BuildDetail = () => {
     <>
       <BuildDetailHero build={build} />
       <BuildDescription build={build} />
+      <BuildTechStack  build={build} />
     </>
 );
 };

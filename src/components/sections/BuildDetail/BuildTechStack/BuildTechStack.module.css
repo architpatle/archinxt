@@ -1,0 +1,92 @@
+.section {
+  padding: 120px 0;
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #22D3EE;
+}
+
+.heading {
+  margin-top: 16px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* GRID */
+
+.grid {
+  margin-top: 80px;
+
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* CARD (MATCH DESCRIPTION STYLE) */
+
+.card {
+  padding: 20px;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99,102,241,0.4);
+}
+
+/* TITLE */
+
+.card h3 {
+  font-size: 14px;
+  color: #9CA3AF;
+  margin-bottom: 12px;
+}
+
+/* ITEMS */
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* TECH TEXT */
+
+.items span {
+  font-size: 13px;
+  color: #D1D5DB;
+
+  padding: 4px 10px;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.05);
+
+  transition: 0.25s ease;
+}
+
+.items span:hover {
+  color: white;
+  background: rgba(255,255,255,0.1);
+}
