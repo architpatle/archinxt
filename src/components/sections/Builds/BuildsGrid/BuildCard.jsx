@@ -1,4 +1,5 @@
 import styles from "./BuildsGrid.module.css";
+import { Link } from "react-router-dom";
 
 const BuildCard = ({ data }) => {
   return (
@@ -42,12 +43,25 @@ const BuildCard = ({ data }) => {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-5">
-          <button className={styles.primaryBtn}>
+
+          <Link
+            to={`/builds/${data.slug}`}
+            className={styles.primaryBtn}
+          >
             View Details
-          </button>
-          <button className={styles.secondaryBtn}>
-            Live Preview
-          </button>
+          </Link>
+
+          {data.live && (
+            <a
+              href={data.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondaryBtn}
+            >
+              Live Preview
+            </a>
+          )}
+
         </div>
 
       </div>

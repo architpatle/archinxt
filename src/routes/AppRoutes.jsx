@@ -8,6 +8,7 @@ import Connect from "../pages/Connect";
 import ConceptDetail from "../pages/ConceptDetail";
 import DesignDetail from "../pages/DesignDetail/DesignDetail";
 import Builds from "../pages/Builds";
+import BuildDetail from "../pages/BuildDetail/BuildDetail";
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
       <Route path="/connect" element={<Connect />} />
      <Route path="/concepts/:conceptId" element={<ConceptDetail />} />
      <Route path="/designs/:designId" element={<DesignDetail />} />
+     <Route path="/builds/:slug" element={<BuildDetail />} />
     </Routes>
   );
 };

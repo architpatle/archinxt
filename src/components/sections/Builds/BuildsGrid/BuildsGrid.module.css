@@ -122,11 +122,17 @@
 
 /* BUTTONS */
 
+/* PRIMARY BUTTON */
+
 .primaryBtn {
 
   flex: 1;
 
- padding: 12px 22px;
+  display: flex;              /* 🔥 FIX */
+  justify-content: center;    /* 🔥 FIX */
+  align-items: center;        /* 🔥 FIX */
+
+  padding: 12px 22px;
 
   border-radius: 8px;
 
@@ -136,7 +142,10 @@
 
   transition: all 0.25s ease;
 
+  color: white;               /* 🔥 ensure text visible */
+  text-decoration: none;      /* 🔥 remove link underline */
 }
+
 
 .primaryBtn:hover {
 
@@ -152,7 +161,11 @@
 
   flex: 1;
 
-padding: 12px 22px;
+  display: flex;              /* 🔥 FIX */
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px 22px;
 
   border-radius: 8px;
 
@@ -160,10 +173,11 @@ padding: 12px 22px;
 
   color: white;
 
+  text-decoration: none;      /* 🔥 important for <a> */
+
   transition: all 0.25s ease;
 
 }
-
 .secondaryBtn:hover {
 
     border-color: #6366F1;
