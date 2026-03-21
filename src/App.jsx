@@ -3,6 +3,7 @@ import Footer from "./components/layout/Footer/Footer";
 import AppRoutes from "./routes/AppRoutes";
 import './index.css'
 import ScrollToTop from "./utils/ScrollToTop";
+import FloatingProfileBtn from "./components/FloatingProfileBtn/FloatingProfileBtn";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 <ScrollToTop />
       <main>
         <AppRoutes />
+        <FloatingProfileBtn />
       </main>
 
       <Footer />
